@@ -18,7 +18,7 @@ func TestCellCoordenatesMapper(t *testing.T) {
 func TestOnceCellShouldPercolate(t *testing.T) { 
   p:= new(percolation.Percolation)
   p.Initialize(1)
-  assert.True(t, p.Percolates(), "1 single closed cell matrix should percolate") 
+  assert.False(t, p.Percolates(), "1 single closed cell matrix should not percolate") 
 }
 
 func TestTwoDimMatrixShouldNotPercolate(t *testing.T) { 
